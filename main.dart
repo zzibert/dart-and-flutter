@@ -1,10 +1,13 @@
-add(a, b) {
+int add(int a, int b) {
   return a + b;
 }
 
+Function fun;
+
+
 void main() {
-  print(add(1, 2));
-  print(add(20.0, 30.0));
-  print(add("a", "b"));
-  // print(add(true, false));
+  fun = add;
+
+  var result = fun(20, 30);
+  print("Result is ${result}");
 }
