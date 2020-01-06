@@ -1,9 +1,10 @@
-void main() {
-  Map<String, int> map = {
-    'A': 10,
-    'B': 20,
-    'C': 30
-  };
+add(a, b) {
+  return a + b;
+}
 
-  print(map['B']);
+void main() {
+  print(add(1, 2));
+  print(add(20.0, 30.0));
+  print(add("a", "b"));
+  // print(add(true, false));
 }
