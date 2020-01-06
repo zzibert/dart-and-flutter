@@ -10,6 +10,6 @@ choose(bool op) {
 }
 
 void main() {
-  var result = choose(true);
-  print("Result is ${result(40, 50)}");
+  var result = choose(true)(10, 20);
+  print("Result is ${result}");
 }
