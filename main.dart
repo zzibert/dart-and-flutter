@@ -14,8 +14,9 @@ void main() {
     print("Hello, from Closure: ${a + b}");
   } (10, 20);
 
-  var f = calc(2);
+  var f = calc(10);
   f();
+  calc(10)();
   f();
   f();
 }
