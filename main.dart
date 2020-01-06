@@ -1,3 +1,5 @@
 void main() {
-  print("Hello, World");
+  var x = -10;
+
+  print(x.abs());
 }
