@@ -1,5 +1,9 @@
 void main() {
-  var x = -10;
+  int x = 10;
 
-  print(x.abs());
+  double y = 10.0;
+
+  String s = "${x + y}";
+
+  print(s);
 }
