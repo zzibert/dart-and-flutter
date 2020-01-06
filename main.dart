@@ -2,12 +2,12 @@ int add(int a, int b) {
   return a + b;
 }
 
-Function fun;
+exec(Function op, x, y) {
+  return op(x, y);
+}
 
 
 void main() {
-  fun = add;
-
-  var result = fun(20, 30);
+  var result = exec(add, 20, 30);
   print("Result is ${result}");
 }
