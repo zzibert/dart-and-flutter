@@ -1,13 +1,15 @@
-int add(int a, int b) {
-  return a + b;
-}
+int add(int x, int y) => x + y;
+int sub(int x, int y) => x - y;
 
-exec(Function op, x, y) {
-  return op(x, y);
+choose(bool op) {
+  if (op == true) {
+    return add;
+  } else {
+    return sub;
+  }
 }
-
 
 void main() {
-  var result = exec(add, 20, 30);
-  print("Result is ${result}");
+  var result = choose(true);
+  print("Result is ${result(40, 50)}");
 }
